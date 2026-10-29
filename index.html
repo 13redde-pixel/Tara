@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For TARA 💫 | From NANNA</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #100711;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at top, #5a123d 0%, #210d25 45%, #100711 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.tag {
+  color: #ffb5d4;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 10vw, 85px);
+  margin: 25px 0;
+  text-shadow: 0 0 25px #ff4f9a;
+}
+
+.hero h1 span { color: #ff83b7; }
+
+.hero p {
+  max-width: 440px;
+  line-height: 1.9;
+  color: #f3d6e7;
+  padding: 0 10px;
+}
+
+.big-heart {
+  font-size: 75px;
+  margin: 25px 0;
+  animation: pulse 1.5s infinite;
+  filter: drop-shadow(0 0 22px #ff4f9a);
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.18); }
+}
+
+button {
+  border: none;
+  padding: 14px 24px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,#ff4d91,#ff86b7);
+  color: #240a19;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 12px 5px;
+  transition: .3s;
+}
+
+button:hover { transform: scale(1.05); }
+
+h2 {
+  font-family: Georgia, serif;
+  color: #ff8dbc;
+  font-size: clamp(28px, 6vw, 42px);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #e8cbdc;
+  line-height: 1.9;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.panel {
+  max-width: 650px;
+  margin: 25px auto;
+  background: #21121f;
+  border: 1px solid #713451;
+  border-radius: 22px;
+  padding: 28px 22px;
+  box-shadow: 0 0 35px #ff4d9110;
+}
+
+#letter {
+  display: none;
+  line-height: 2;
+  white-space: pre-line;
+  color: #ffe3ef;
+  text-align: left;
+  animation: appear .7s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #a83d70;
+}
+
+input[type=file] {
+  width: 100%;
+  margin: 15px 0;
+  color: #ffe3ef;
+}
+
+.proposal {
+  background: linear-gradient(145deg,#42142f,#1b101d);
+}
+
+.proposal p {
+  color: #f5d9e7;
+  line-height: 2;
+}
+
+#reply {
+  color: #ffafd0;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+footer {
+  padding: 35px 15px;
+  text-align: center;
+  background: #080509;
+  color: #ff9cc5;
+  line-height: 2;
+}
+
+.float {
+  position: fixed;
+  bottom: -40px;
+  pointer-events: none;
+  z-index: 99;
+  animation: rise 5s linear forwards;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-115vh) rotate(40deg);
+    opacity: 0;
+  }
+}
+
+@media(max-width:400px) {
+  .gallery img { height: 150px; }
+  section { padding: 55px 15px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BIRTHDAY HOME -->
+<section class="hero">
+  <div class="tag">A LITTLE WORLD MADE FOR YOU 🎀</div>
+
+  <div class="big-heart">💗</div>
+
+  <h1>Happy Birthday<br>
+    <span>TARA💫</span>
+  </h1>
+
+  <p>
+    To my favourite person, my happiness,
+    my NANNA. This little website holds
+    a piece of my heart, made just for you.
+  </p>
+
+  <button onclick="showLetter()">
+    Open Your Love Letter 💌
+  </button>
+
+  <p style="margin-top:25px">
+    30 · 10 · 2026<br>
+    Forever Yours, NANNA ♡
+  </p>
+</section>
+
+<!-- LOVE LETTER -->
+<section id="love">
+  <h2>Words From My Heart 💌</h2>
+
+  <p class="subtitle">
+    Some feelings are too special for ordinary words.
+    So I made this little surprise for you.
+  </p>
+
+  <div class="panel" id="letter">
+    <h2 style="font-size:29px">My TARA💫 ❤️</h2>
+
+    Happy Birthday, my NANNA! 🎀
+
+    You are a beautiful part of my world.
+    Your smile makes my days brighter,
+    and your happiness means so much to me.
+
+    I wish I could give you every beautiful
+    thing this world has to offer.
+
+    Thank you for being the person you are.
+    I hope this birthday brings you endless
+    smiles, love and unforgettable memories.
+
+    No matter how many birthdays pass,
+    you will always have a special place
+    in my heart.
+
+    I love you so much, TARA. 💗
+
+    Forever yours,
+    NANNA ❤️
+
+    <button onclick="makeHearts()">
+      A Thousand Hearts For You 💕
+    </button>
+  </div>
+</section>
+
+<!-- OUR MEMORIES -->
+<section>
+  <h2>Our Little Universe 📸</h2>
+
+  <p class="subtitle">
+    Every picture holds a memory.
+    Add your favourite photos together here.
+  </p>
+
+  <div class="panel">
+    <input id="photos" type="file"
+           accept="image/*" multiple>
+
+    <div class="gallery" id="gallery">
+      <p style="grid-column:1/-1;color:#ffb5d4">
+        Our memories will appear here 💗
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROPOSAL -->
+<section class="proposal">
+  <div class="panel">
+    <div class="big-heart">💍</div>
+
+    <h2>One Question, TARA...</h2>
+
+    <p>
+      My NANNA, birthdays come once a year,
+      but my wish is to make you feel special
+      on ordinary days too.
+
+      I want to share laughter with you,
+      support your dreams, listen to your heart,
+      and create countless memories together.
+
+      I cannot promise a perfect life,
+      but I want to keep showing up with care,
+      honesty and love.
+
+      <br><br>
+
+      <strong style="color:#ff8dbc;font-size:23px">
+        Will you be part of my forever? ❤️
+      </strong>
+    </p>
+
+    <button onclick="proposal('yes')">
+      Yes, NANNA! 💖
+    </button>
+
+    <button onclick="proposal('think')">
+      Let Me Think 🌷
+    </button>
+
+    <div id="reply"></div>
+  </div>
+</section>
+
+<footer>
+  <h2 style="font-size:29px">TARA💫 🎀</h2>
+  Made with all my love,<br>
+  Your NANNA ❤️
+  <p>30 October 2026</p>
+  <p>One heart. One special story. ♡</p>
+</footer>
+
+<script>
+function showLetter() {
+  const letter = document.getElementById("letter");
+  letter.style.display = "block";
+
+  document.getElementById("love").scrollIntoView({
+    behavior: "smooth"
+  });
+
+  makeHearts();
+}
+
+function makeHearts() {
+  const symbols = ["💗","💕","❤️","✨","🎀"];
+
+  for (let i = 0; i < 35; i++) {
+    const item = document.createElement("span");
+    item.className = "float";
+    item.textContent =
+      symbols[Math.floor(Math.random() * symbols.length)];
+
+    item.style.left = Math.random() * 95 + "vw";
+    item.style.fontSize = (18 + Math.random() * 25) + "px";
+
+    document.body.appendChild(item);
+
+    setTimeout(() => item.remove(), 5200);
+  }
+}
+
+function proposal(choice) {
+  const reply = document.getElementById("reply");
+
+  if (choice === "yes") {
+    reply.textContent =
+      "You made this moment even more special! 💖 " +
+      "Sending you all my love, TARA. — NANNA 🎀";
+    makeHearts();
+  } else {
+    reply.textContent =
+      "Take your time, my TARA. Your feelings matter, " +
+      "and you deserve to choose what feels right. 🌷";
+  }
+}
+
+document.getElementById("photos").addEventListener(
+  "change", function() {
+    const gallery = document.getElementById("gallery");
+    gallery.replaceChildren();
+
+    Array.from(this.files)
+      .filter(file => file.type.startsWith("image/"))
+      .slice(0, 12)
+      .forEach(file => {
+        const img = document.createElement("img");
+        img.alt = "Our special memory";
+        img.src = URL.createObjectURL(file);
+        gallery.appendChild(img);
+      });
+  }
+);
+</script>
+
+</body>
+</html>
